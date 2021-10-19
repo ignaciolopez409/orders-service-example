@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>uy.edu.ort.devops</groupId>
 	<artifactId>orders-service-example</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>orders-service-example</name>
 	<description>Demo project for migrating Monolith to Microservices</description>
 	<properties>
@@ -20,6 +20,7 @@
         <connection>scm:git:git@github.com:ignaciolopez409/orders-service-example.git</connection>
         <developerConnection>scm:git:git@github.com:ignaciolopez409/orders-service-example.git</developerConnection>
         <url>https://github.com/ignaciolopez409/orders-service-example</url>
+    <tag>orders-service-example-0.0.2</tag>
   </scm>
 
 	<dependencies>
