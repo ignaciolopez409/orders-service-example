@@ -86,4 +86,35 @@
             </plugin>
 		</plugins>
 	</build>
+        <profiles>
+            <profile>
+                <id>sonar</id>
+                <properties>
+                    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+                    <sonar.organization>ignaciolopez409</sonar.organization>
+                    <sonar.projectKey>ignaciolopez409</sonar.projectKey>
+                    <sonar.moduleKey>${project.groupId}:${project.artifactId}</sonar.moduleKey>
+                </properties>
+                <activation>
+                    <activeByDefault>true</activeByDefault>
+                </activation>
+                <build>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.sonarsource.scanner.maven</groupId>
+                            <artifactId>sonar-maven-plugin</artifactId>
+                            <version>3.0</version>
+                            <executions>
+                                <execution>
+                                    <phase>verify</phase>
+                                    <goals>
+                                        <goal>sonar</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
+                        </plugin>
+                    </plugins>
+                </build>
+            </profile>
+        </profiles>
 </project>
