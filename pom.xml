@@ -91,7 +91,7 @@
                 <id>sonar</id>
                 <properties>
                     <sonar.organization>ignaciolopez409</sonar.organization>
-                    <sonar.projectKey>ignaciolopez409</sonar.projectKey>
+                    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
                 </properties>
                 <activation>
                     <activeByDefault>true</activeByDefault>
